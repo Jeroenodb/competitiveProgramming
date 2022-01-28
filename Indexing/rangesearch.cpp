@@ -1,0 +1,80 @@
+#include "bits/stdc++.h"
+using namespace std;
+#define all(x) begin(x),end(x)
+template<typename A, typename B> ostream& operator<<(ostream &os, const pair<A, B> &p) { return os << '(' << p.first << ", " << p.second << ')'; }
+template<typename T_container, typename T = typename enable_if<!is_same<T_container, string>::value, typename T_container::value_type>::type> ostream& operator<<(ostream &os, const T_container &v) { string sep; for (const T &x : v) os << sep << x, sep = " "; return os; }
+#define debug(a) cerr << "(" << #a << ": " << a << ")\n";
+typedef long long ll;
+typedef vector<int> vi;
+typedef vector<vi> vvi;
+typedef pair<int,int> pi;
+const int mxN = 1e5+1, oo = 1e9;
+struct RankDS {
+    typedef unsigned int uint;
+    // Uses 2*n + O(1) bits for a bitset of size n
+    vector<uint>  bits,pref;
+    RankDS() {}
+    RankDS(vector<bool> input) {
+        int n = input.size(), w = (n+31)/32;
+        bits.resize(w),pref.resize(w);
+        int prf=0,j=-1;
+        for(int i=0;i<n;++i) {
+            if(i%32==0) {
+                pref[++j]=prf;
+            }
+            if(input[i]) {
+                prf++;
+                bits[j]|=1U<<(i%32);
+            }
+        }
+    }
+    int rank(int i) {
+        int j = i/32,shift = 31-i%32;
+        return pref[j]+__builtin_popcount(bits[j]<<shift);
+    }
+};
+struct rangetree {
+    vi x,y, sortedx;
+    struct node {
+        vi ids;
+        RankDS ra;
+        node* l=NULL, *r=NULL;
+        int lo,hi;
+        template<typename V> node(V b, V e,int l, int r) {
+            ids = vi(b,e);
+            if(l!=r+1) {
+                int mid = (l+r)/2;
+                auto partids = ids;
+                vector<bool> goesleft(ids.size());
+                transform(b,e,goesleft.begin(),[&mid](V i) {return x[*i]<sortedx[mid];});
+                ra = RankDS(goesleft);
+                auto middle = stable_partition(all(partids),[&mid](V i){return x[*i]<sortedx[mid];});
+                if(middle!=start) l = new node(partids.begin(),middle,l,mid);
+                if(middle+1!=end) r = new node(middle, partids.end(),mid,r);
+            }
+        }
+        void search(int l, int r, int a, int b) {
+
+        }
+    };
+    node* root=NULL;
+    rangetree() {}
+    rangetree(const vi& X,const vi& Y) : x(X), y(Y) {
+        sortedx = x;
+        sort(all(sortedx));
+        sort(all(y));
+        int n=x.size();
+        vi id(n); iota(all(id),0);
+        
+        sort(all(id), [&](int a, int b){return y[a]<y[b];});
+        root = new node(all(id),0,n);
+    }
+    void query(int l,int r, int a, int b) {
+        int a = lower_bound(all(y),a)-y.begin(),b = upper_bound(all(y), b)-y.begin();
+    }
+    
+
+};
+int main() {
+    
+}

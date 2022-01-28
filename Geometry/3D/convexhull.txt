@@ -1,0 +1,578 @@
+PT 0 0 0 red
+PT 1 0 0 red
+PT 0 1 0 red
+PT 0 0 1 red
+PT 1 1 0 red
+PT 1 0 1 red
+PT 0 1 1 red
+PT 1 1 1 red
+PT 0.5 0.5 0.5 red
+PT 0.66666 0.77777 0.88888 red
+PT 0 0 0 green
+PAUSE
+PT 0 0 1 green
+PAUSE
+PT 0 1 0 green
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 orange
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 0 0 0 blue
+SEG 0 0 0 0 0 1 white
+PT 0 0 0 blue
+SEG 0 0 1 0 1 -1 white
+PT 0 0 0 blue
+SEG 0 1 0 0 -1 0 white
+PAUSE
+SEG 0 0 0 0 0 1 blue
+PAUSE
+PT 0 0 0 green
+PAUSE
+PT 0 0 1 green
+PAUSE
+PT 0 1 0 green
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 green
+PAUSE
+PT 0.66666 0.77777 0.88888 orange
+PAUSE
+PT 1 0 0 green
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 1 0 0 blue
+POLY 3 0 0 0 0 0 1 1 0 0 green
+SEG 0 0 0 1 0 0 white
+SEG 1 0 0 -1 0 1 white
+PAUSE
+SEG 0 0 0 1 0 0 blue
+PAUSE
+PT 0 0 0 green
+PAUSE
+PT 0 0 1 green
+PAUSE
+PT 0 1 0 green
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 orange
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 0 1 0 blue
+POLY 3 0 0 0 1 0 0 0 1 0 green
+SEG 0 0 0 0 1 0 white
+SEG 0 1 0 1 -1 0 white
+PAUSE
+SEG 0 0 1 0 1 -1 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 orange
+PAUSE
+PT 0 1 0 orange
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 green
+PAUSE
+PT 0.66666 0.77777 0.88888 green
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 green
+PAUSE
+PT 1 1 1 blue
+POLY 3 0 0 1 0 1 0 1 1 1 green
+SEG 0 0 1 1 1 0 white
+SEG 1 1 1 -1 0 -1 white
+PAUSE
+SEG 0 0 1 1 1 0 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 orange
+PAUSE
+PT 0 1 0 orange
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 orange
+PAUSE
+PT 1 0 0 green
+PAUSE
+PT 1 0 1 green
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 1 0 1 blue
+POLY 3 0 0 1 1 1 1 1 0 1 green
+SEG 0 0 1 1 0 0 white
+SEG 1 0 1 0 1 0 white
+PAUSE
+SEG 0 0 1 1 0 0 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 orange
+PAUSE
+PT 0 1 0 orange
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 orange
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 0 0 0 blue
+POLY 3 0 0 1 1 0 1 0 0 0 green
+SEG 0 0 1 0 0 -1 white
+SEG 0 0 0 1 0 1 white
+PAUSE
+SEG 0 0 0 1 0 1 blue
+PAUSE
+PT 0 0 0 green
+PAUSE
+PT 0 0 1 green
+PAUSE
+PT 0 1 0 green
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 orange
+PAUSE
+PT 1 0 0 green
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 1 0 0 blue
+POLY 3 0 0 0 1 0 1 1 0 0 green
+SEG 0 0 0 1 0 0 white
+SEG 1 0 0 0 0 1 white
+PAUSE
+SEG 0 1 0 1 -1 0 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 green
+PAUSE
+PT 0 1 0 orange
+PAUSE
+PT 0 1 1 green
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 green
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 green
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 1 1 0 blue
+POLY 3 0 1 0 1 0 0 1 1 0 green
+SEG 0 1 0 1 0 0 white
+SEG 1 1 0 0 -1 0 white
+PAUSE
+SEG 0 1 0 1 0 0 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 green
+PAUSE
+PT 0 1 0 orange
+PAUSE
+PT 0 1 1 green
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 orange
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 0 1 1 blue
+POLY 3 0 1 0 1 1 0 0 1 1 green
+SEG 0 1 0 0 0 1 white
+SEG 0 1 1 1 0 -1 white
+PAUSE
+SEG 0 1 0 0 0 1 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 orange
+PAUSE
+PT 0 1 0 orange
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 orange
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 0 0 0 blue
+POLY 3 0 1 0 0 1 1 0 0 0 green
+SEG 0 1 0 0 -1 0 white
+SEG 0 0 0 0 1 1 white
+PAUSE
+SEG 0 0 0 0 1 1 blue
+PAUSE
+PT 0 0 0 green
+PAUSE
+PT 0 0 1 green
+PAUSE
+PT 0 1 0 orange
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 orange
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 0 0 1 blue
+POLY 3 0 0 0 0 1 1 0 0 1 green
+SEG 0 0 0 0 0 1 white
+SEG 0 0 1 0 1 0 white
+PAUSE
+SEG 0 0 1 0 1 0 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 orange
+PAUSE
+PT 0 1 0 orange
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 green
+PAUSE
+PT 0.66666 0.77777 0.88888 green
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 green
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 1 0 1 blue
+POLY 3 0 0 1 0 1 1 1 0 1 green
+SEG 0 0 1 1 0 0 white
+SEG 1 0 1 -1 1 0 white
+PAUSE
+SEG 0 1 1 1 0 -1 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 green
+PAUSE
+PT 0 1 0 orange
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 green
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 green
+PAUSE
+PT 1 1 1 blue
+POLY 3 0 1 1 1 1 0 1 1 1 green
+SEG 0 1 1 1 0 0 white
+SEG 1 1 1 0 0 -1 white
+PAUSE
+SEG 0 1 1 1 0 0 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 green
+PAUSE
+PT 0 1 0 orange
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 orange
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 0 0 1 blue
+POLY 3 0 1 1 1 1 1 0 0 1 green
+SEG 0 1 1 0 -1 0 white
+SEG 0 0 1 1 1 0 white
+PAUSE
+SEG 1 0 0 -1 0 1 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 orange
+PAUSE
+PT 0 1 0 green
+PAUSE
+PT 0 1 1 green
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 green
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 green
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 1 0 1 blue
+POLY 3 1 0 0 0 0 1 1 0 1 green
+SEG 1 0 0 0 0 1 white
+SEG 1 0 1 -1 0 0 white
+PAUSE
+SEG 1 0 0 0 0 1 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 orange
+PAUSE
+PT 0 1 0 green
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 green
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 green
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 1 1 0 blue
+POLY 3 1 0 0 1 0 1 1 1 0 green
+SEG 1 0 0 0 1 0 white
+SEG 1 1 0 0 -1 1 white
+PAUSE
+SEG 1 0 1 -1 1 0 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 orange
+PAUSE
+PT 0 1 0 green
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 green
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 green
+PAUSE
+PT 1 1 1 blue
+POLY 3 1 0 1 0 1 1 1 1 1 green
+SEG 1 0 1 0 1 0 white
+SEG 1 1 1 -1 0 0 white
+PAUSE
+SEG 1 0 1 0 1 0 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 orange
+PAUSE
+PT 0 1 0 orange
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 orange
+PAUSE
+PT 1 0 0 green
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 1 0 0 blue
+POLY 3 1 0 1 1 1 1 1 0 0 green
+SEG 1 0 1 0 0 -1 white
+SEG 1 0 0 0 1 1 white
+PAUSE
+SEG 1 0 0 0 1 1 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 orange
+PAUSE
+PT 0 1 0 green
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 orange
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 green
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 1 1 0 blue
+POLY 3 1 0 0 1 1 1 1 1 0 green
+SEG 1 0 0 0 1 0 white
+SEG 1 1 0 0 0 1 white
+PAUSE
+SEG 1 1 0 0 -1 1 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 green
+PAUSE
+PT 0 1 0 orange
+PAUSE
+PT 0 1 1 green
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 green
+PAUSE
+PT 1 0 0 orange
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 orange
+PAUSE
+PT 1 1 1 green
+PAUSE
+PT 1 1 1 blue
+POLY 3 1 1 0 1 0 1 1 1 1 green
+SEG 1 1 0 0 0 1 white
+SEG 1 1 1 0 -1 0 white
+PAUSE
+SEG 1 1 1 -1 0 -1 blue
+PAUSE
+PT 0 0 0 orange
+PAUSE
+PT 0 0 1 orange
+PAUSE
+PT 0 1 0 orange
+PAUSE
+PT 0 1 1 orange
+PAUSE
+PT 0.5 0.5 0.5 orange
+PAUSE
+PT 0.66666 0.77777 0.88888 orange
+PAUSE
+PT 1 0 0 green
+PAUSE
+PT 1 0 1 orange
+PAUSE
+PT 1 1 0 green
+PAUSE
+PT 1 1 1 orange
+PAUSE
+PT 1 1 0 blue
+POLY 3 1 1 1 0 1 0 1 1 0 green
+SEG 1 1 1 0 0 -1 white
+SEG 1 1 0 -1 0 0 white
+PAUSE
+PAUSE
