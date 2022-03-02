@@ -1,0 +1,84 @@
+/*
+ID: jeroen.3
+TASK: tet
+LANG: C++
+*/
+#include "bits/stdc++.h"
+// #include "geodeb.h"
+using namespace std;
+#define all(x) x.begin(),x.end()
+template<typename A, typename B> ostream& operator<<(ostream &os, const pair<A, B> &p) { return os << '(' << p.first << ", " << p.second << ')'; }
+template<typename T_container, typename T = typename enable_if<!is_same<T_container, string>::value, typename T_container::value_type>::type> ostream& operator<<(ostream &os, const T_container &v) { string sep; for (const T &x : v) os << sep << x, sep = " "; return os; }
+#define debug(a) cerr << "(" << #a << ": " << a << ")\n";
+typedef long long ll;
+typedef vector<int> vi;
+typedef vector<vi> vvi;
+typedef pair<int,int> pi;
+
+const int ptwo=1024, oo = 1e9;
+// max= on range and find max in range
+
+// can be extended?
+template <int ...Ns> struct lazyseg {
+    int val = 0;
+    void set(int v) { val = max(val,v);}
+    int query() { return val; }
+};
+ 
+template <int N, int... Ns> struct lazyseg<N, Ns...> {
+    lazyseg<Ns...> local[N*2], global[N*2];
+    template<typename... Args> void set(int val, int a, int b, Args... args) {
+        setrec(1,val,0,N-1,a,b,args...);
+    }
+    template<typename... Args> void setrec(int i, int val, int l, int r, int a, int b, Args... args) {
+        assert(i<2*N);
+        if(b<l or r<a) return; // fully outside
+        if(a<=l and r<=b) {
+            local[i].set(val,args...);
+            // fully inside
+            return;
+        }
+        
+        global[i].set(val,args...);
+        int mid = (l+r)/2;
+        setrec(i*2,val,l,mid,a,b,args...);
+        setrec(i*2+1,val,mid+1,r,a,b,args...);
+    }
+    template<typename... Args> int query(int a, int b, Args... args) {
+        return maxrec(1,0,N-1,a,b, args...);
+    }
+    template<typename... Args> int maxrec(int i, int l, int r, int a, int b, Args... args) {
+        assert(i<2*N);
+        if(b<l or r<a) return 0; // fully outside
+        int ans = local[i].query(args...);
+        if(a<=l and r<=b) {
+            // fully inside
+            return max(ans,global[i].query(args...));
+        }
+        int mid = (l+r)/2;
+        ans = max(ans,maxrec(2*i,l,mid,a,b,args...));
+        return max(ans, maxrec(2*i+1,mid+1,r,a,b,args...));
+    }
+};
+
+lazyseg<ptwo,ptwo> segtree;
+
+int main() {
+    #ifndef LOCAL
+    freopen("tet.in", "r", stdin);
+    freopen("tet.out", "w", stdout);
+    #endif
+    // GD_INIT("tetris3D.html");
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int haha,hoho,n; cin >> haha >> hoho >> n;
+    int ans = 0;
+    for(int i=0;i<n;++i) {
+        int d,s,w,x,y; cin >> d >> s >> w >> x >> y;
+        // GD_RECTANGLE(x,y,x+d,y+s, "black:red") << w;
+        auto highest = segtree.query(x,x+d-1,y,y+s-1);
+        segtree.set(highest+w,x,x+d-1,y,y+s-1);
+        ans = max(ans,highest+w);
+    }
+    cout << ans << '\n';
+}
